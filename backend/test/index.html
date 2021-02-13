@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let user = {
+                name: "Ivan",
+                login_user: "Ivan1212",
+                email: "user1@mail.ru",
+                phone: "+79096261123",
+                password: "123456",
+            };
+        /*fetch('http://localhost:5006/register/', {
+            method: 'POST',
+            body: JSON.stringify(user),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(res => console.log(res))
+        .catch(res => console.log(res));*/
+        fetch('http://localhost:5006/login/', {
+            method: 'POST',
+            body: JSON.stringify(user),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(res => console.log(res))
+        .catch(res => console.log(res));
+    </script>
+</body>
+</html>

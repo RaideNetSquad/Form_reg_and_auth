@@ -1,0 +1,9 @@
+{
+    "username": "postgres",
+    "password": "123456",
+    "host": "127.0.0.1",
+    "port": "5432",
+    "database": "auth",
+    "port_app": 5012,
+    "secret_key": "dpfeoyg9349f0eowf0ew9fq32exfverferperferfqerf433!@#!#@##"
+}
